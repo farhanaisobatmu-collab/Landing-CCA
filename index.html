@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credible Central Agency | AI Automation Agency Indonesia</title>
+    <meta name="description" content="Buy Back Your Time, Scale the Meaningful. Credible Central Agency membantu bisnis Anda mengintegrasikan ekosistem AI cerdas untuk memangkas waktu kerja hingga 80%.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0F172A', // Deep Navy
+                        accent: '#3B82F6',  // Electric Blue
+                        success: '#10B981', // Cyber Green
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.7);
+        }
+        .animate-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3B82F6, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Logo Animation */
+        @keyframes logo-shimmer {
+            0% { filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.5)); }
+            50% { filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8)); }
+            100% { filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.5)); }
+        }
+        .cca-logo-svg {
+            animation: logo-shimmer 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Improved Logo Section -->
+                <div class="flex items-center gap-3 group cursor-pointer">
+                    <div class="relative w-11 h-11 flex items-center justify-center">
+                        <!-- Logo Icon (Monogram CCA Style) -->
+                        <svg class="cca-logo-svg w-full h-full text-accent" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5L90 27.5V72.5L50 95L10 72.5V27.5L50 5Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+                            <path d="M30 40C30 34.4772 34.4772 30 40 30H60C65.5228 30 70 34.4772 70 40V60C70 65.5228 65.5228 70 60 70H40C34.4772 70 30 65.5228 30 60V40Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="8" fill="currentColor">
+                                <animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <path d="M50 30V15M50 85V70M70 50H85M15 50H30" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span class="font-black text-xl tracking-tighter uppercase group-hover:text-accent transition-colors">Credible</span>
+                        <span class="text-[10px] font-bold tracking-[0.2em] text-slate-500 dark:text-slate-400 uppercase">Central Agency</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#services" class="hover:text-accent transition-colors">Services</a>
+                    <a href="#process" class="hover:text-accent transition-colors">Process</a>
+                    <a href="#faq" class="hover:text-accent transition-colors">FAQ</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg>
+                    </button>
+                    <a href="#cta" class="bg-primary dark:bg-accent text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-all shadow-lg shadow-accent/10">
+                        Book a Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-4 relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10 dark:opacity-20 pointer-events-none">
+            <svg class="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="500" cy="200" r="300" fill="url(#grad1)" />
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0" />
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold mb-6 animate-reveal">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                </span>
+                AI AUTOMATION AGENCY INDONESIA
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 animate-reveal leading-tight tracking-tight">
+                Buy Back Your Time, <br>
+                <span class="gradient-text">Scale the Meaningful.</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400 mb-10 animate-reveal leading-relaxed">
+                Credible Central Agency membantu bisnis Anda mengintegrasikan ekosistem AI cerdas untuk memangkas waktu kerja hingga 80%. Saatnya bekerja pintar, bukan sekadar keras.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-reveal">
+                <a href="#cta" class="w-full sm:w-auto px-8 py-4 bg-accent text-white rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-accent/40 transition-all transform hover:-translate-y-1">
+                    Get Free AI Audit
+                </a>
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-all transform hover:-translate-y-1">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-12 border-y border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-sm font-semibold text-slate-400 mb-8 uppercase tracking-widest">Trusted by Innovation-First Businesses</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-70">
+                <div class="flex flex-col items-center group">
+                    <span class="text-3xl md:text-4xl font-black group-hover:text-accent transition-colors">100+</span>
+                    <span class="text-[10px] uppercase font-bold tracking-tighter text-slate-500">Hours Saved / Week</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <span class="text-3xl md:text-4xl font-black group-hover:text-accent transition-colors">80%</span>
+                    <span class="text-[10px] uppercase font-bold tracking-tighter text-slate-500">Efficiency Boost</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <span class="text-3xl md:text-4xl font-black group-hover:text-accent transition-colors">24/7</span>
+                    <span class="text-[10px] uppercase font-bold tracking-tighter text-slate-500">AI Operations</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <span class="text-3xl md:text-4xl font-black group-hover:text-accent transition-colors">10x</span>
+                    <span class="text-[10px] uppercase font-bold tracking-tighter text-slate-500">Faster Scaling</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-4 bg-white dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Our Expertise</h2>
+                <p class="text-slate-500 max-w-xl mx-auto">Solusi kustom untuk tantangan bisnis modern Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 animate-reveal hover:border-accent/50 transition-all duration-300">
+                    <div class="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Smart Chatbots</h3>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Layanan pelanggan otomatis yang dilatih menggunakan data bisnis Anda untuk menangani pertanyaan secara akurat 24/7.</p>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Custom Knowledge Base</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Lead Qualification</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl border border-accent/30 bg-white dark:bg-slate-900 shadow-xl shadow-accent/5 animate-reveal relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-success/5 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform"></div>
+                    <div class="w-14 h-14 bg-success/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Workflow Automation</h3>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Hubungkan ribuan aplikasi (Zapier/Make) untuk mengotomatiskan tugas berulang yang menghabiskan waktu tim Anda.</p>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Zero Human Error</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> CRM Syncing</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 animate-reveal hover:border-accent/50 transition-all duration-300">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI Outreach</h3>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Personalisasi kampanye email dan LinkedIn secara massal tanpa kehilangan sentuhan manusiawi.</p>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> High Conversion Rate</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Smart Personalization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-24 px-4 overflow-hidden bg-slate-50 dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">The Road to Efficiency</h2>
+                <p class="text-slate-500">Proses sederhana untuk hasil yang luar biasa.</p>
+            </div>
+
+            <div class="relative px-4">
+                <!-- Progress Line (Desktop) -->
+                <div class="hidden md:block absolute top-[32px] left-0 w-full h-[2px] bg-slate-200 dark:bg-slate-800"></div>
+                
+                <div class="grid md:grid-cols-3 gap-16 relative">
+                    <!-- Step 1 -->
+                    <div class="text-center group animate-reveal">
+                        <div class="w-16 h-16 bg-primary dark:bg-white text-white dark:text-primary rounded-2xl flex items-center justify-center text-2xl font-black mx-auto mb-8 relative z-10 transition-all group-hover:rotate-6 group-hover:scale-110 shadow-xl shadow-primary/20">1</div>
+                        <h4 class="text-xl font-bold mb-3 tracking-tight">Audit & Strategy</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed max-w-[250px] mx-auto">Kami membedah workflow Anda untuk menemukan celah efisiensi dan potensi ROI AI.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center group animate-reveal" style="transition-delay: 0.2s;">
+                        <div class="w-16 h-16 bg-accent text-white rounded-2xl flex items-center justify-center text-2xl font-black mx-auto mb-8 relative z-10 transition-all group-hover:-rotate-6 group-hover:scale-110 shadow-xl shadow-accent/20">2</div>
+                        <h4 class="text-xl font-bold mb-3 tracking-tight">Custom Build</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed max-w-[250px] mx-auto">Tim engineer kami membangun sistem AI custom yang terintegrasi penuh dengan tech stack Anda.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center group animate-reveal" style="transition-delay: 0.4s;">
+                        <div class="w-16 h-16 bg-success text-white rounded-2xl flex items-center justify-center text-2xl font-black mx-auto mb-8 relative z-10 transition-all group-hover:rotate-6 group-hover:scale-110 shadow-xl shadow-success/20">3</div>
+                        <h4 class="text-xl font-bold mb-3 tracking-tight">Scale & Deploy</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed max-w-[250px] mx-auto">Peluncuran sistem dan monitoring real-time untuk memastikan performa maksimal 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 px-4">
+        <div class="max-w-5xl mx-auto rounded-[3.5rem] bg-slate-900 dark:bg-slate-900 border border-slate-800 p-12 md:p-24 text-center relative overflow-hidden">
+            <!-- Decorative effects -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-accent/30 rounded-full blur-[100px]"></div>
+            <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-success/20 rounded-full blur-[100px]"></div>
+
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 relative z-10 leading-tight">Siap Mengotomatiskan Masa Depan Bisnis Anda?</h2>
+            <p class="text-slate-400 mb-12 text-lg relative z-10 max-w-2xl mx-auto">Jadwalkan audit gratis selama 15 menit dan temukan bagaimana AI dapat menghemat ribuan jam kerja tim Anda setiap tahun.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+                <a href="#" class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-100 transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-3">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    Book a Freedom Call
+                </a>
+            </div>
+            <p class="text-white/30 text-[10px] mt-8 font-bold tracking-[0.3em] uppercase">No commitment. Just strategy.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <!-- Footer Logo -->
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <svg class="text-accent w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 5L90 27.5V72.5L50 95L10 72.5V27.5L50 5Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round"/>
+                                <circle cx="50" cy="50" r="15" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span class="font-black text-xl tracking-tighter">Credible Central</span>
+                    </div>
+                    <p class="text-slate-500 text-sm max-w-xs leading-relaxed">Membawa bisnis tradisional ke era otonom melalui integrasi kecerdasan buatan kelas dunia.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-12 text-sm font-bold">
+                    <div class="flex flex-col gap-4">
+                        <span class="text-slate-400 uppercase tracking-widest text-[10px]">Company</span>
+                        <a href="#services" class="hover:text-accent transition-colors">Services</a>
+                        <a href="#process" class="hover:text-accent transition-colors">Process</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-slate-400 uppercase tracking-widest text-[10px]">Social</span>
+                        <a href="#" class="hover:text-accent transition-colors">LinkedIn</a>
+                        <a href="#" class="hover:text-accent transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-slate-100 dark:border-slate-900 flex flex-col md:flex-row justify-between gap-4 text-xs font-medium text-slate-400">
+                <p>© 2025 Credible Central Agency. Dibuat untuk Efisiensi Maksimal.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-600">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-600">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Switcher Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            document.documentElement.classList.add('dark');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+            document.documentElement.classList.remove('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+
+        // Simple Intersection Observer for Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-reveal').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
